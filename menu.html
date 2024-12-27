@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Menu</title>
+    <style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #928a8a;
+    background-image: url('menu.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+header {
+    opacity: 60%;
+    background-color: black; 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+}
+
+header h1 {
+    margin: 0;
+    color: rgb(253, 250, 250);
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu-item {
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+
+.menu-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('menu.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 60%; 
+    z-index: -1; 
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #fdfdfd;
+    margin-bottom: 15px;
+}
+
+.menu-item .price {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bean Vogue</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="111.jpeg" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>A rich and bold shot of coffee, made from finely ground beans.</p>
+            <p class="price">$2.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="22.jpeg" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>A perfect blend of espresso, steamed milk, and foam.</p>
+            <p class="price">$3.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="33.jpeg" alt="Latte">
+            <h3>Latte</h3>
+            <p>A smooth combination of espresso and steamed milk, topped with foam.</p>
+            <p class="price">$3.00</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="44.jpeg" alt="Americano">
+            <h3>Americano</h3>
+            <p>Espresso diluted with hot water for a smoother, less intense flavor.</p>
+            <p class="price">$2.80</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="55.png" alt="Mocha">
+            <h3>Mocha</h3>
+            <p>A sweet combination of chocolate, espresso, and steamed milk.</p>
+            <p class="price">$3.80</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="66.jpeg" alt="Iced Coffee">
+            <h3>Iced Coffee</h3>
+            <p>Refreshing iced coffee, perfect for warm weather.</p>
+            <p class="price">$3.00</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Vogue</title>
+    <style>
+        header {
+            opacity: 60%;
+            background-color: black;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            color: rgb(253, 250, 250);
+        }
+
+        header a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 16px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('a.png');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        button {
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: #f59e42;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    top: 54%; 
+    left: 61%; 
+    transform: translate(0%, 0%); 
+}
+
+
+        
+
+        .order-now:hover {
+            background-color: #ff6f30; 
+            transform: translateY(-4px); 
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+        }
+
+        .order-now:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.7); 
+        }
+
+        @keyframes button-press {
+            0% { transform: scale(1); }
+            50% { transform: scale(0.98); }
+            100% { transform: scale(1); }
+        }
+
+        .order-now:active {
+            animation: button-press 0.2s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            .order-now {
+                width: 180px;
+                height: 55px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .order-now {
+                width: 160px;
+                height: 50px;
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bean Vogue</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <button class="order-now">Order Now!</button>
+    </main>
+</body>
+</html>

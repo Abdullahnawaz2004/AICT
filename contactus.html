@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            opacity: 60%;
+            background-color: black; 
+            
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative; 
+        }
+
+        header h1 {
+            margin: 0;
+            flex-grow: 1;
+            padding-right: 20px; 
+        }
+
+        header nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        header a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin-left: 20px; 
+            font-size: 16px;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            font-size: 16px;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            width: 100%;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bean Vogue</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bean Vogue. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
